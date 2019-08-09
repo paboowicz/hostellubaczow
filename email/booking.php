@@ -8,16 +8,16 @@ if($_POST)
     ##################################################################################################################
     
     // Site Settings 
-    $site_title          = "Hotel Zante";
-    $site_url            = "https://eagle-themes.com/zantehotel";
-    $facebook_link       = "https://www.facebook.com/eaglethemescom"; 
+    $site_title          = "Hostel Oleńka";
+    $site_url            = "https://hostellubaczow.pl";
+    $facebook_link       = "https://www.facebook.com/hostellubaczow"; 
     $twitter_link        = "https://twitter.com/"; 
-    $admin_phone         = "18881234567";
+    $admin_phone         = "694313806";
 
     // Email Settings
-    $admin_email         = "noreply@eagle-themes.com";
-    $admin_subject       = "Hotel Zante - New Reservation"; 
-    $customer_subject    = "Hotel Zante - Booking Details"; 
+    $admin_email         = "noreply@hostellubaczow.pl";
+    $admin_subject       = "Hostel Oleńka - Nowa rezerwacja"; 
+    $customer_subject    = "Hostel Oleńska - Szczegóły rezerwacji"; 
     
     // Output Messages
     $success_mssg        = "Your reservation has been submitted to us.<br> We'll contact you as quickly as possible.";

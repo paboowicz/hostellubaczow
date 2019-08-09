@@ -4,9 +4,9 @@ if($_POST)
     ##################################################################################################################
     
     // Email Settings
-    $site_title     = "Hotel Zante";
-    $to_email       = "noreply@eagle-themes.com"; 
-    $subject        = "Hotel Zante - New Message"; 
+    $site_title     = "Hostel Oleńka";
+    $to_email       = "noreply@hostellubaczow.pl"; 
+    $subject        = "Hostel Oleńka - Nowa wiadomość"; 
     
     // Output Messages
     $success_mssg   = "Your message has been sent successfully. Thank you.";               
@@ -17,10 +17,10 @@ if($_POST)
     $email_mssg     = "Please enter a valid email!";                                  
                              
     //Email Text
-    $tr_name    = "Name";
+    $tr_name    = "Imię";
     $tr_email   = "Email";
-    $tr_message = "Message";
-    $tr_phone   = "Phone Number";
+    $tr_message = "Wiadomość";
+    $tr_phone   = "Numer telefonu";
     
     ##################################################################################################################
 
