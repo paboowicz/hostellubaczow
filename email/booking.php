@@ -15,25 +15,25 @@ if($_POST)
     $admin_phone         = "694313806";
 
     // Email Settings
-    $admin_email         = "noreply@hostellubaczow.pl";
+    $admin_email         = "elsebek1983@poczta.fm";
     $admin_subject       = "Hostel Oleńka - Nowa rezerwacja"; 
     $customer_subject    = "Hostel Oleńska - Szczegóły rezerwacji"; 
     
     // Output Messages
-    $success_mssg        = "Your reservation has been submitted to us.<br> We'll contact you as quickly as possible.";
-    $error_mssg          = "An error has occurred. Please check your PHP email configuration.";
-    $email_mssg          = "Please enter a valid email!"; 
-    $booking_date        = "You can't depart before you arrive"; 
-    $empty_email         = "Email is empty!<br> Please enter something.";
-    $empty_roomtype      = "Room Type is empty!<br> Please enter something.";
-    $empty_checkin       = "Arrival Date is empty!<br> Please enter something.";
-    $empty_checkout      = "Departure Date is empty!<br> Please enter something.";
-    $empty_adults        = "Adults is empty!<br> Please enter something.";
-    $empty_children      = "Children is empty!<br> Please enter something.";
-    $empty_name          = "Name is empty!<br> Please enter something.";
-    $empty_phone         = "Phone Number is empty!<br> Please enter something.";
-    $empty_comments      = "Coomments section is empty!<br> Please enter something.";
-    $empty_country       = "Country section is empty!<br> Please enter something.";
+    $success_mssg        = "Twoja rezerwacja została nam przesłana. <br> Skontaktujemy się z Tobą tak szybko, jak to możliwe.";
+    $error_mssg          = "Wystąpił błąd. Sprawdź konfigurację e-mail PHP.";
+    $email_mssg          = "Proszę podać poprawny adres e-mail!"; 
+    $booking_date        = "Nie możesz odjechać przed przyjazdem ;)"; 
+    $empty_email         = "Adres e-mail jest pusty! <br> Wpisz coś";
+    $empty_roomtype      = "Wybierz pokój";
+    $empty_checkin       = "Podaj datę przyjazdu";
+    $empty_checkout      = "Podaj datę wyjazdu.";
+    $empty_adults        = "Podaj liczbę dorosłych";
+    $empty_children      = "Podaj liczbę dzieci";
+    $empty_name          = "Wpisz swoję imię.";
+    $empty_phone         = "Brak numeru telefonu";
+    $empty_comments      = "Wpisz swoje uwagi";
+    $empty_country       = "Podaj kraj.";
     
     ##################################################################################################################
     
@@ -68,8 +68,8 @@ if($_POST)
     if(empty($checkout)){$output = json_encode(array('type'=>'error', 'text' => $empty_checkout)); die($output);}
     if(empty($adults) && ($adults != '0')){$output = json_encode(array('type'=>'error', 'text' => $empty_adults)); die($output);}
     if(empty($children) && ($children != '0')){$output = json_encode(array('type'=>'error', 'text' => $empty_children)); die($output);}
-    //if(empty($customer_name)){$output = json_encode(array('type'=>'error', 'text' => $empty_name));die($output);}
-    //if(empty($customer_phone)){$output = json_encode(array('type'=>'error', 'text' => $empty_phone));die($output);}
+    if(empty($customer_name)){$output = json_encode(array('type'=>'error', 'text' => $empty_name));die($output);}
+    if(empty($customer_phone)){$output = json_encode(array('type'=>'error', 'text' => $empty_phone));die($output);}
     //if(empty($comments)){$output = json_encode(array('type'=>'error', 'text' => $empty_comments));die($output);}
     //if(empty($country)){$output = json_encode(array('type'=>'error', 'text' => $empty_country));die($output);}
     

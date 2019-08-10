@@ -5,16 +5,16 @@ if($_POST)
     
     // Email Settings
     $site_title     = "Hostel Oleńka";
-    $to_email       = "noreply@hostellubaczow.pl"; 
+    $to_email       = "elsebek1983@poczta.fm"; 
     $subject        = "Hostel Oleńka - Nowa wiadomość"; 
     
     // Output Messages
-    $success_mssg   = "Your message has been sent successfully. Thank you.";               
-    $error_mssg     = "An error has occurred. Please check your PHP email configuration."; 
-    $short_mssg     = "Too short message! Please enter something.";                      
-    $empty_fields   = "Input fields are empty! Please enter something.";              
-    $name_mssg      = "Name is too short or empty! Please enter something.";             
-    $email_mssg     = "Please enter a valid email!";                                  
+    $success_mssg   = "Twoja wiadomość została wysłana. Dziękujemy.";               
+    $error_mssg     = "Wystąpił błąd. Spróbuj ponownie."; 
+    $short_mssg     = "Wiadomość nie może być tak krótka.";                      
+    $empty_fields   = "Wiadomość nie może być pusta.";              
+    $name_mssg      = "Wpisz pełne imię.";             
+    $email_mssg     = "Wpisz poprawny email!";                                  
                              
     //Email Text
     $tr_name    = "Imię";
@@ -82,7 +82,7 @@ if($_POST)
     'Content-type:text/html;charset=utf-8' . PHP_EOL .
     'X-Mailer: PHP/' . phpversion();
     
-    $message = "Name: $user_name <br> -- Email: $user_email <br> -- Phone: $user_phone <br> -- Message: $user_message";
+    $message = "Imię: $user_name <br> -- Email: $user_email <br> -- Telefon: $user_phone <br> -- Wiadomość: $user_message";
     
     $sendemail = @mail($to_email, $subject, $message, $headers);
     
