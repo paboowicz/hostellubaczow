@@ -124,7 +124,7 @@
      }
      .navbar-toggle {
          display: block;
-         margin-top: 18px;
+         margin-top: 35px;
      }
      header.scroll  .navbar-toggle {
          margin-top: 10px;
@@ -454,7 +454,7 @@
      /*========== HERO ==========*/
      .hero_wrapper {
          position: relative;
-         margin-bottom: 620px;
+         margin-bottom: 60px;
      }
      #hero,
      #hero ul,
