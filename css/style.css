@@ -1909,6 +1909,7 @@ header.transparent {
 
 header.nav_bg {
     background: #fff;
+	height: 110px;
 }
 
 header.transparent.fixed {
@@ -1926,6 +1927,7 @@ header .nodisplay {
 header.transparent.nav_bg {
     border-bottom: 1px solid #e6eff2;
     top: 0;
+	
 }
 
 header .navbar-header .navbar-brand {
@@ -2036,6 +2038,7 @@ header .navbar-header .mobile_menu_btn.active .icon-bar:nth-of-type(3) {
 
 #main_menu .navbar-nav li a {
     color: #a1b1c1;
+	margin-top: 20px;
 }
 
 #main_menu .navbar-nav li a:hover,
@@ -3462,6 +3465,12 @@ footer .inner {
 footer .inner {
     border-bottom: 1px solid #f5f5f5;
 }
+footer .inner .logo{
+    width: 100px;
+    height: 57px;
+
+}
+
 
 footer.dark .inner {
     border-bottom: none;

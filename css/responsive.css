@@ -82,18 +82,27 @@
  /* Large Devices, Wide Screens */
  @media only screen and (min-width: 1200px) {
      .container {
-         width: 1200px;
+         width: 1200px;			 
      }
       #blog .blog_item .main {
          padding: 0;
          padding-top: 10px;
      }
+	 header .navbar-header .navbar-brand img {
+         max-height: 72px;
+		 height: 70px;
+     }
+	 
  }
 
  /* Large Devices, Wide Screens */ 
  @media only screen and (max-width: 1200px) {
      #rooms_block_view .room_block_item .room_info {
          padding: 15px;
+     }
+	 header .navbar-header .navbar-brand img {
+         max-height: 72px;
+		 height: 70px;
      }
  
  }
@@ -111,7 +120,7 @@
          padding: 10px 0;
      }
      header .navbar-header .navbar-brand img {
-         max-height: 24px;
+         max-height: 64px;
      }
      header .navbar-header .mobile-menu-btn {
          padding-top: 18px !important;
