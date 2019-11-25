@@ -5,7 +5,7 @@ if($_POST)
     
     // Email Settings
     $site_title     = "Hostel Oleńka";
-    $to_email       = "elsebek1983@poczta.fm"; 
+    $to_email       = "halinazajac5@wp.pl "; 
     $subject        = "Hostel Oleńka - Nowa wiadomość"; 
     
     // Output Messages

@@ -15,7 +15,7 @@ if($_POST)
     $admin_phone         = "694313806";
 
     // Email Settings
-    $admin_email         = "elsebek1983@poczta.fm";
+    $admin_email         = "halinazajac5@wp.pl ";
     $admin_subject       = "Hostel Oleńka - Nowa rezerwacja"; 
     $customer_subject    = "Hostel Oleńska - Szczegóły rezerwacji"; 
     
