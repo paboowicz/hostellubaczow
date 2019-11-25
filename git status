@@ -1,0 +1,237 @@
+[1mdiff --git a/css/responsive.css b/css/responsive.css[m
+[1mindex de3ea07..4e6d95d 100644[m
+[1m--- a/css/responsive.css[m
+[1m+++ b/css/responsive.css[m
+[36m@@ -82,12 +82,17 @@[m
+  /* Large Devices, Wide Screens */[m
+  @media only screen and (min-width: 1200px) {[m
+      .container {[m
+[31m-         width: 1200px;[m
+[32m+[m[32m         width: 1200px;[m[41m			 [m
+      }[m
+       #blog .blog_item .main {[m
+          padding: 0;[m
+          padding-top: 10px;[m
+      }[m
+[32m+[m	[32m header .navbar-header .navbar-brand img {[m
+[32m+[m[32m         max-height: 72px;[m
+[32m+[m		[32m height: 70px;[m
+[32m+[m[32m     }[m
+[32m+[m[41m	 [m
+  }[m
+ [m
+  /* Large Devices, Wide Screens */ [m
+[36m@@ -95,6 +100,10 @@[m
+      #rooms_block_view .room_block_item .room_info {[m
+          padding: 15px;[m
+      }[m
+[32m+[m	[32m header .navbar-header .navbar-brand img {[m
+[32m+[m[32m         max-height: 72px;[m
+[32m+[m		[32m height: 70px;[m
+[32m+[m[32m     }[m
+  [m
+  }[m
+ [m
+[36m@@ -111,7 +120,7 @@[m
+          padding: 10px 0;[m
+      }[m
+      header .navbar-header .navbar-brand img {[m
+[31m-         max-height: 24px;[m
+[32m+[m[32m         max-height: 64px;[m
+      }[m
+      header .navbar-header .mobile-menu-btn {[m
+          padding-top: 18px !important;[m
+[1mdiff --git a/css/style.css b/css/style.css[m
+[1mindex e725380..0416df9 100644[m
+[1m--- a/css/style.css[m
+[1m+++ b/css/style.css[m
+[36m@@ -1909,6 +1909,7 @@[m [mheader.transparent {[m
+ [m
+ header.nav_bg {[m
+     background: #fff;[m
+[32m+[m	[32mheight: 110px;[m
+ }[m
+ [m
+ header.transparent.fixed {[m
+[36m@@ -1926,6 +1927,7 @@[m [mheader .nodisplay {[m
+ header.transparent.nav_bg {[m
+     border-bottom: 1px solid #e6eff2;[m
+     top: 0;[m
+[32m+[m[41m	[m
+ }[m
+ [m
+ header .navbar-header .navbar-brand {[m
+[36m@@ -2036,6 +2038,7 @@[m [mheader .navbar-header .mobile_menu_btn.active .icon-bar:nth-of-type(3) {[m
+ [m
+ #main_menu .navbar-nav li a {[m
+     color: #a1b1c1;[m
+[32m+[m	[32mmargin-top: 20px;[m
+ }[m
+ [m
+ #main_menu .navbar-nav li a:hover,[m
+[36m@@ -3462,6 +3465,12 @@[m [mfooter .inner {[m
+ footer .inner {[m
+     border-bottom: 1px solid #f5f5f5;[m
+ }[m
+[32m+[m[32mfooter .inner .logo{[m
+[32m+[m[32m    width: 100px;[m
+[32m+[m[32m    height: 57px;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+ [m
+ footer.dark .inner {[m
+     border-bottom: none;[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 920012f..91970e7 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -339,7 +339,7 @@[m
+                              data-responsive_offset="on" [m
+                              data-fontsize="['20','20','20','15']" [m
+                              data-lineheight="['20','20','20','15']"[m
+[31m-                             data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"}]'><i class="fa fa-check-square-o"></i> Już od 30zł za dobę[m
+[32m+[m[32m                             data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"}]'><i class="fa fa-check-square-o"></i> Już od 40zł za dobę[m
+                         </div>[m
+                         <!-- LAYER NR. 11 --> [m
+                         <div class="tp-caption f_item"[m
+[36m@@ -591,8 +591,8 @@[m [mw telewizor a w salonie udostępniony jest laptop z dostępem do internetu. Doda[m
+                 [m
+ 				<p>Cena:</p>[m
+ 				<ul class="list_menu">[m
+[31m-					<li>35 zł od osoby za I dobę</li>[m
+[31m-					<li>30 zł od osoby za II dobę i kolejne</li>[m
+[32m+[m					[32m<li>40 zł od osoby za dobę</li>[m
+[32m+[m					[32m<!--<li>40 zł od osoby za II dobę i kolejne</li>-->[m
+ 					<li>przy dłuższych pobytach udzielamy rabatów</li>[m
+ 				</ul>[m
+             </div>[m
+[36m@@ -612,7 +612,7 @@[m [mw telewizor a w salonie udostępniony jest laptop z dostępem do internetu. Doda[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price">30PLN <span>/ noc</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ noc</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/single-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[36m@@ -626,7 +626,7 @@[m [mw telewizor a w salonie udostępniony jest laptop z dostępem do internetu. Doda[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price">30PLN <span>/ noc</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ noc</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/double-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[36m@@ -640,7 +640,7 @@[m [mw telewizor a w salonie udostępniony jest laptop z dostępem do internetu. Doda[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price"> 30PLN <span>/ noc</span></div>[m
+[32m+[m[32m                                    <div class="price"> 40PLN <span>/ noc</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/deluxe-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[1mdiff --git a/index_en.html b/index_en.html[m
+[1mindex d6606f9..711581d 100644[m
+[1m--- a/index_en.html[m
+[1m+++ b/index_en.html[m
+[36m@@ -339,7 +339,7 @@[m
+                              data-responsive_offset="on" [m
+                              data-fontsize="['20','20','20','15']" [m
+                              data-lineheight="['20','20','20','15']"[m
+[31m-                             data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"}]'><i class="fa fa-check-square-o"></i> From 30 PLN per night[m
+[32m+[m[32m                             data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"}]'><i class="fa fa-check-square-o"></i> From 40 PLN per night[m
+                         </div>[m
+                         <!-- LAYER NR. 11 --> [m
+                         <div class="tp-caption f_item"[m
+[36m@@ -590,8 +590,8 @@[m [mTV and laptop in the living room with internet access. In addition, the hostel p[m
+                 [m
+ 				<p>Price:</p>[m
+ 				<ul class="list_menu">[m
+[31m-					<li>PLN 35 per person for the first day</li>[m
+[31m-					<li>PLN 30 per person for the second day and subsequent</li>[m
+[32m+[m					[32m<li>PLN 40 per person per day</li>[m
+[32m+[m					[32m<!--<li>PLN 30 per person for the second day and subsequent</li>-->[m
+ 					<li>we offer discounts for longer stays</li>[m
+ 				</ul>[m
+             </div>[m
+[36m@@ -611,7 +611,7 @@[m [mTV and laptop in the living room with internet access. In addition, the hostel p[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price">30PLN <span>/ night</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ night</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/single-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[36m@@ -625,7 +625,7 @@[m [mTV and laptop in the living room with internet access. In addition, the hostel p[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price">30PLN <span>/ night</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ night</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/double-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[36m@@ -639,7 +639,7 @@[m [mTV and laptop in the living room with internet access. In addition, the hostel p[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price"> 30PLN <span>/ night</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ night</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/deluxe-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[1mdiff --git a/index_ua.html b/index_ua.html[m
+[1mindex 6432bea..844b650 100644[m
+[1m--- a/index_ua.html[m
+[1m+++ b/index_ua.html[m
+[36m@@ -339,7 +339,7 @@[m
+                              data-responsive_offset="on" [m
+                              data-fontsize="['20','20','20','15']" [m
+                              data-lineheight="['20','20','20','15']"[m
+[31m-                             data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"}]'><i class="fa fa-check-square-o"></i> від 30 злотих за добу[m
+[32m+[m[32m                             data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"}]'><i class="fa fa-check-square-o"></i> від 40 злотих за добу[m
+                         </div>[m
+                         <!-- LAYER NR. 11 --> [m
+                         <div class="tp-caption f_item"[m
+[36m@@ -588,8 +588,8 @@[m
+                 [m
+ 				<p>Ціна:</p>[m
+ 				<ul class="list_menu">[m
+[31m-					<li>35 злотих за особу за перший день</li>[m
+[31m-					<li>30 злотих на особу на другий день і наступні</li>[m
+[32m+[m					[32m<li>40 злотих за особу за день</li>[m
+[32m+[m					[32m<!--<li>30 злотих на особу на другий день і наступні</li>-->[m
+ 					<li>ми пропонуємо знижки на триваліше проживання</li>[m
+ 				</ul>[m
+             </div>[m
+[36m@@ -609,7 +609,7 @@[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price">30PLN <span>/ ніч</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ ніч</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/single-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[36m@@ -623,7 +623,7 @@[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price">30PLN <span>/ ніч</span></div>[m
+[32m+[m[32m                                    <div class="price">40PLN <span>/ ніч</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/double-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
+[36m@@ -637,7 +637,7 @@[m
+                         <div class="col-md-4">[m
+                             <article class="room">[m
+                                 <figure>[m
+[31m-                                    <div class="price"> 30PLN <span>/ ніч</span></div>[m
+[32m+[m[32m                                    <div class="price"> 40PLN <span>/ ніч</span></div>[m
+                                     <a class="hover_effect h_blue h_link" href="#">[m
+                                         <img src="images/rooms/deluxe-room.jpg" class="img-responsive" alt="Image">[m
+                                     </a>[m
